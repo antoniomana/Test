@@ -19,7 +19,7 @@ public class Cuenta {
 
     public double extrae(double cantidad) {
         final double extraido = Math.min(saldo, cantidad);
-        saldo -= extraido;
+        saldo = saldo - extraido;
         return extraido;
     }
 
