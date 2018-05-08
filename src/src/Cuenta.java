@@ -14,7 +14,7 @@ public class Cuenta {
         if (cantidad < 0) {
             throw new test.IngresoNegativoException("ingreso negativo: " + cantidad);
         }
-        saldo = saldo + cantidad;
+        saldo += cantidad;
     }
 
     public double extrae(double cantidad) {
